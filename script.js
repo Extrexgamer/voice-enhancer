@@ -1,4 +1,4 @@
-const API_URL="http://localhost:8000";
+const API_URL="https://voice-enhancer.onrender.com";
 const fileEl=document.querySelector("#file"),drop=document.querySelector("#drop"),player=document.querySelector("#player"),audio=document.querySelector("#audio"),status=document.querySelector("#status"),enhance=document.querySelector("#enhance"),download=document.querySelector("#download");
 let selected=null;
 function setStatus(t){status.textContent=t;status.classList.remove("hidden")}
