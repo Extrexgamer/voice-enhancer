@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VoxEnhance AI</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand">Vox<span>Enhance</span> <b>AI</b></div><div class="pill">AI Voice Enhancement</div></header>
+<main><section class="hero"><p class="eyebrow">AI AUDIO CLEANUP</p><h1>Make every voice sound <span>clearer.</span></h1>
+<p class="sub">Upload a recording and enhance speech clarity, reduce unwanted noise and normalize loudness.</p></section>
+<section class="card"><label id="drop" class="drop"><input id="file" type="file" accept="audio/*">
+<div class="icon">↑</div><h2>Drop your audio here</h2><p>or click to browse • WAV, MP3, M4A, OGG</p></label>
+<div id="status" class="status hidden"></div>
+<div id="player" class="hidden"><div class="track"><div><strong id="name"></strong><small id="meta"></small></div><audio id="audio" controls></audio></div>
+<div class="grid">
+<div class="control"><label>Noise reduction <output id="nrOut">Medium</output></label><input id="nr" type="range" min="0" max="100" value="60"></div>
+<div class="control"><label>Voice clarity <output id="clarityOut">70%</output></label><input id="clarity" type="range" min="0" max="100" value="70"></div>
+<div class="control"><label>Warmth <output id="warmOut">35%</output></label><input id="warm" type="range" min="0" max="100" value="35"></div>
+<div class="control"><label>Output <output id="gainOut">100%</output></label><input id="gain" type="range" min="50" max="150" value="100"></div>
+</div>
+<div class="actions"><button id="enhance" class="primary">✨ Enhance with AI</button><a id="download" class="secondary disabled">Download enhanced audio</a></div>
+<p class="note">This starter processes audio on your backend. The included pipeline uses FFmpeg DSP; swap in a neural denoiser for true AI enhancement.</p>
+</div></section></main>
+<script src="script.js"></script></body></html>
